@@ -13,6 +13,7 @@
 		52855D8719E92C600066002C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52855D8619E92C600066002C /* Images.xcassets */; };
 		52855D8A19E92C600066002C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52855D8819E92C600066002C /* LaunchScreen.xib */; };
 		52855D9619E92C610066002C /* Shots_Implementing2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52855D9519E92C610066002C /* Shots_Implementing2Tests.swift */; };
+		52855DA119E92D4F0066002C /* TipoType - Libertad.otf in Resources */ = {isa = PBXBuildFile; fileRef = 52855DA019E92D4F0066002C /* TipoType - Libertad.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		52855D8F19E92C610066002C /* Shots-Implementing2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Shots-Implementing2Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52855D9419E92C610066002C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52855D9519E92C610066002C /* Shots_Implementing2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shots_Implementing2Tests.swift; sourceTree = "<group>"; };
+		52855DA019E92D4F0066002C /* TipoType - Libertad.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TipoType - Libertad.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 		52855D7119E92C5D0066002C = {
 			isa = PBXGroup;
 			children = (
+				52855D9F19E92D4F0066002C /* font */,
 				52855D7C19E92C5F0066002C /* Shots-Implementing2 */,
 				52855D9219E92C610066002C /* Shots-Implementing2Tests */,
 				52855D7B19E92C5F0066002C /* Products */,
@@ -110,6 +113,15 @@
 				52855D9419E92C610066002C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		52855D9F19E92D4F0066002C /* font */ = {
+			isa = PBXGroup;
+			children = (
+				52855DA019E92D4F0066002C /* TipoType - Libertad.otf */,
+			);
+			name = font;
+			path = "../../Downloads/Shots-Assets/font";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +204,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52855DA119E92D4F0066002C /* TipoType - Libertad.otf in Resources */,
 				52855D8519E92C600066002C /* Main.storyboard in Resources */,
 				52855D8A19E92C600066002C /* LaunchScreen.xib in Resources */,
 				52855D8719E92C600066002C /* Images.xcassets in Resources */,
