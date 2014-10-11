@@ -19,6 +19,7 @@
 		52855DAC19E999A10066002C /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52855DA719E999A10066002C /* DesignableView.swift */; };
 		52855DAD19E999A10066002C /* Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52855DA819E999A10066002C /* Misc.swift */; };
 		52855DAE19E999A10066002C /* SpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52855DA919E999A10066002C /* SpringAnimation.swift */; };
+		52855DB019E9A7CE0066002C /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52855DAF19E9A7CE0066002C /* Detail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		52855DA719E999A10066002C /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		52855DA819E999A10066002C /* Misc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Misc.swift; sourceTree = "<group>"; };
 		52855DA919E999A10066002C /* SpringAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringAnimation.swift; sourceTree = "<group>"; };
+		52855DAF19E9A7CE0066002C /* Detail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			children = (
 				52855D7F19E92C600066002C /* AppDelegate.swift */,
 				52855D8319E92C600066002C /* Main.storyboard */,
+				52855DAF19E9A7CE0066002C /* Detail.swift */,
 				52855DA219E94A720066002C /* Home.swift */,
 				52855D8619E92C600066002C /* Images.xcassets */,
 				52855D8819E92C600066002C /* LaunchScreen.xib */,
@@ -251,6 +254,7 @@
 			files = (
 				52855DA319E94A720066002C /* Home.swift in Sources */,
 				52855D8019E92C600066002C /* AppDelegate.swift in Sources */,
+				52855DB019E9A7CE0066002C /* Detail.swift in Sources */,
 				52855DAA19E999A10066002C /* BlurView.swift in Sources */,
 				52855DAD19E999A10066002C /* Misc.swift in Sources */,
 				52855DAE19E999A10066002C /* SpringAnimation.swift in Sources */,
@@ -378,6 +382,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Shots-Implementing2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -388,6 +393,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Shots-Implementing2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
