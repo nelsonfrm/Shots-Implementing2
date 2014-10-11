@@ -14,6 +14,11 @@
 		52855D9619E92C610066002C /* Shots_Implementing2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52855D9519E92C610066002C /* Shots_Implementing2Tests.swift */; };
 		52855DA119E92D4F0066002C /* TipoType - Libertad.otf in Resources */ = {isa = PBXBuildFile; fileRef = 52855DA019E92D4F0066002C /* TipoType - Libertad.otf */; };
 		52855DA319E94A720066002C /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52855DA219E94A720066002C /* Home.swift */; };
+		52855DAA19E999A10066002C /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52855DA519E999A10066002C /* BlurView.swift */; };
+		52855DAB19E999A10066002C /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52855DA619E999A10066002C /* Data.swift */; };
+		52855DAC19E999A10066002C /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52855DA719E999A10066002C /* DesignableView.swift */; };
+		52855DAD19E999A10066002C /* Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52855DA819E999A10066002C /* Misc.swift */; };
+		52855DAE19E999A10066002C /* SpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52855DA919E999A10066002C /* SpringAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +43,11 @@
 		52855D9519E92C610066002C /* Shots_Implementing2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shots_Implementing2Tests.swift; sourceTree = "<group>"; };
 		52855DA019E92D4F0066002C /* TipoType - Libertad.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TipoType - Libertad.otf"; sourceTree = "<group>"; };
 		52855DA219E94A720066002C /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		52855DA519E999A10066002C /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		52855DA619E999A10066002C /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		52855DA719E999A10066002C /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+		52855DA819E999A10066002C /* Misc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Misc.swift; sourceTree = "<group>"; };
+		52855DA919E999A10066002C /* SpringAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +71,7 @@
 		52855D7119E92C5D0066002C = {
 			isa = PBXGroup;
 			children = (
+				52855DA419E999A10066002C /* Spring */,
 				52855D9F19E92D4F0066002C /* font */,
 				52855D7C19E92C5F0066002C /* Shots-Implementing2 */,
 				52855D9219E92C610066002C /* Shots-Implementing2Tests */,
@@ -122,6 +133,19 @@
 			);
 			name = font;
 			path = "../../Downloads/Shots-Assets/font";
+			sourceTree = "<group>";
+		};
+		52855DA419E999A10066002C /* Spring */ = {
+			isa = PBXGroup;
+			children = (
+				52855DA519E999A10066002C /* BlurView.swift */,
+				52855DA619E999A10066002C /* Data.swift */,
+				52855DA719E999A10066002C /* DesignableView.swift */,
+				52855DA819E999A10066002C /* Misc.swift */,
+				52855DA919E999A10066002C /* SpringAnimation.swift */,
+			);
+			name = Spring;
+			path = "../../Downloads/Shots-Assets/Spring";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +251,11 @@
 			files = (
 				52855DA319E94A720066002C /* Home.swift in Sources */,
 				52855D8019E92C600066002C /* AppDelegate.swift in Sources */,
+				52855DAA19E999A10066002C /* BlurView.swift in Sources */,
+				52855DAD19E999A10066002C /* Misc.swift in Sources */,
+				52855DAE19E999A10066002C /* SpringAnimation.swift in Sources */,
+				52855DAC19E999A10066002C /* DesignableView.swift in Sources */,
+				52855DAB19E999A10066002C /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -54,6 +54,8 @@ class Home: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        insertBlurView(BackgroundMaskView, UIBlurEffectStyle.Dark)
+        insertBlurView(HeaderView, UIBlurEffectStyle.Dark)
         // Do any additional setup after loading the view.
     }
 
