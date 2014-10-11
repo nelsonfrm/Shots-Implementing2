@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		52855D8019E92C600066002C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52855D7F19E92C600066002C /* AppDelegate.swift */; };
-		52855D8219E92C600066002C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52855D8119E92C600066002C /* ViewController.swift */; };
 		52855D8519E92C600066002C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52855D8319E92C600066002C /* Main.storyboard */; };
 		52855D8719E92C600066002C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52855D8619E92C600066002C /* Images.xcassets */; };
 		52855D8A19E92C600066002C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52855D8819E92C600066002C /* LaunchScreen.xib */; };
 		52855D9619E92C610066002C /* Shots_Implementing2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52855D9519E92C610066002C /* Shots_Implementing2Tests.swift */; };
 		52855DA119E92D4F0066002C /* TipoType - Libertad.otf in Resources */ = {isa = PBXBuildFile; fileRef = 52855DA019E92D4F0066002C /* TipoType - Libertad.otf */; };
+		52855DA319E94A720066002C /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52855DA219E94A720066002C /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +30,6 @@
 		52855D7A19E92C5F0066002C /* Shots-Implementing2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shots-Implementing2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52855D7E19E92C600066002C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52855D7F19E92C600066002C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		52855D8119E92C600066002C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		52855D8419E92C600066002C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		52855D8619E92C600066002C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		52855D8919E92C600066002C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -38,6 +37,7 @@
 		52855D9419E92C610066002C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52855D9519E92C610066002C /* Shots_Implementing2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shots_Implementing2Tests.swift; sourceTree = "<group>"; };
 		52855DA019E92D4F0066002C /* TipoType - Libertad.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TipoType - Libertad.otf"; sourceTree = "<group>"; };
+		52855DA219E94A720066002C /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +81,8 @@
 			isa = PBXGroup;
 			children = (
 				52855D7F19E92C600066002C /* AppDelegate.swift */,
-				52855D8119E92C600066002C /* ViewController.swift */,
 				52855D8319E92C600066002C /* Main.storyboard */,
+				52855DA219E94A720066002C /* Home.swift */,
 				52855D8619E92C600066002C /* Images.xcassets */,
 				52855D8819E92C600066002C /* LaunchScreen.xib */,
 				52855D7D19E92C600066002C /* Supporting Files */,
@@ -225,7 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52855D8219E92C600066002C /* ViewController.swift in Sources */,
+				52855DA319E94A720066002C /* Home.swift in Sources */,
 				52855D8019E92C600066002C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -17,10 +17,11 @@
         </mutableArray>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Home-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Shots_Implementing2" customModuleProvider="target" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <viewController id="vXZ-lx-hvc" customClass="Home" customModule="Shots_Implementing2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -44,6 +45,7 @@
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
+                                                    <action selector="ImageButtonDidPress:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fJf-CC-B4q"/>
                                                     <segue destination="H35-r7-GCe" kind="modal" animates="NO" id="hUG-a3-NEa"/>
                                                 </connections>
                                             </button>
@@ -97,6 +99,9 @@
                                                     <color key="titleColor" red="0.23921568627450981" green="0.25882352941176473" blue="0.30588235294117649" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="LikeButtonDidPress:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="hpo-2E-XUi"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="17X-Ap-Fsv">
                                                 <rect key="frame" x="140" y="210" width="140" height="60"/>
@@ -107,6 +112,9 @@
                                                     <color key="titleColor" red="0.23921568630000001" green="0.25882352939999997" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="ShareButtonDidPress:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="BiL-74-Xr6"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.93333339691162109" green="0.96078437566757202" blue="0.97254908084869385" alpha="1" colorSpace="deviceRGB"/>
@@ -121,7 +129,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="popover-bg" id="UHl-pT-RPl">
-                                                <rect key="frame" x="0.0" y="0.0" width="170" height="141"/>
+                                                <rect key="frame" x="-3" y="0.0" width="170" height="141"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="EN2-8V-8tk">
@@ -145,7 +153,7 @@
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="24G-Rm-FZi">
-                                                <rect key="frame" x="51" y="45" width="170" height="42"/>
+                                                <rect key="frame" x="0.0" y="99" width="170" height="42"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="Libertad" family="Libertad" pointSize="18"/>
                                                 <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -218,11 +226,14 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4zW-H1-dgS">
-                                        <rect key="frame" x="265" y="34" width="40" height="40"/>
+                                        <rect key="frame" x="260" y="34" width="40" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" backgroundImage="button-user">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="UserButtonDidPress:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="77E-az-3rx"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
@@ -230,8 +241,24 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="AuthorLabel" destination="eGn-to-NaF" id="nkj-io-fRw"/>
+                        <outlet property="AvatarImageView" destination="yN4-Nh-pJN" id="Ahb-Ht-5Gl"/>
+                        <outlet property="BackgroundImageView" destination="xaV-bg-pxL" id="TJR-oC-cVI"/>
+                        <outlet property="BackgroundMaskView" destination="hd4-Pi-qFb" id="qy4-79-1SE"/>
+                        <outlet property="DialogView" destination="DAT-hq-GXZ" id="u1R-VU-kCP"/>
+                        <outlet property="DialogfavoritesImageView" destination="m7k-rg-8lM" id="MS7-bG-gJf"/>
+                        <outlet property="FavoritesLabel" destination="AGu-FM-Vwb" id="kxl-22-gt9"/>
+                        <outlet property="HeaderView" destination="36g-WD-Ac1" id="xNX-YM-RWX"/>
+                        <outlet property="ImageButton" destination="9dU-jK-eBM" id="yeO-XS-tS3"/>
+                        <outlet property="LikeButton" destination="UdV-F3-Ljg" id="duJ-Wh-byg"/>
+                        <outlet property="PopoverView" destination="xDI-TH-FFb" id="Z5t-Z3-Jep"/>
+                        <outlet property="ShareButton" destination="17X-Ap-Fsv" id="Hya-hm-LbN"/>
+                        <outlet property="ShareView" destination="ted-ls-3PQ" id="oH9-YB-pAH"/>
+                        <outlet property="TitleLabel" destination="0c0-Ba-xXa" id="zBc-sn-7Gv"/>
+                        <outlet property="userButton" destination="4zW-H1-dgS" id="W7C-Uv-e4f"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="74" y="128"/>
         </scene>
