@@ -39,9 +39,11 @@ class Home: UIViewController {
     @IBAction func ShareButtonDidPress(sender: AnyObject) {
         ShareView.hidden = false
         ShareView.alpha = 0
+        ShareView.transform = CGAffineTransformMakeTranslation(0, 200)
         
         UIView.animateWithDuration(0.5, animations: {
             self.ShareView.alpha = 1
+            self.ShareView.transform = CGAffineTransformMakeTranslation(0, 0)
         
         })
         
@@ -49,6 +51,20 @@ class Home: UIViewController {
     
     @IBAction func UserButtonDidPress(sender: AnyObject) {
         PopoverView.hidden = false
+        //position before animate
+        let scale = CGAffineTransformMakeScale(0.3, 0.3)
+        let translate = CGAffineTransformMakeTranslation(50, -50)
+        PopoverView.transform = CGAffineTransformConcat(scale, translate)
+        PopoverView.alpha = 0
+        
+        UIView.animateWithDuration(0.3, animations: {
+            //position after animate
+            let scale = CGAffineTransformMakeScale(1,1)
+            let translate = CGAffineTransformMakeTranslation(0, -0)
+            self.PopoverView.transform = CGAffineTransformConcat(scale, translate)
+            self.PopoverView.alpha = 1
+        })
+        
     }
     
     @IBAction func ImageButtonDidPress(sender: AnyObject) {
@@ -80,6 +96,20 @@ class Home: UIViewController {
         //Doing blur
         insertBlurView(BackgroundMaskView, UIBlurEffectStyle.Dark)
         insertBlurView(HeaderView, UIBlurEffectStyle.Dark)
+       
+        //position after animate - is very invisible
+      let scale = CGAffineTransformMakeScale(0.5, 0.5)
+      let translate = CGAffineTransformMakeTranslation(0, -200)
+      DialogView.transform = CGAffineTransformConcat(scale, translate)
+        
+        //position after animate - - is very invisible
+        UIView.animateWithDuration(0.5, animations: {
+            let scale = CGAffineTransformMakeScale(1, 1)
+            let translate = CGAffineTransformMakeTranslation(0, 0)
+            self.DialogView.transform = CGAffineTransformConcat(scale, translate)
+    
+        })
+        
         // Do any additional setup after loading the view.
     }
 
